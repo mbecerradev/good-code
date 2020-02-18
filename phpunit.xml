@@ -1,0 +1,18 @@
+<phpunit
+  bootstrap="vendor/autoload.php"
+  colors="true"
+  beStrictAboutTestsThatDoNotTestAnything="true"
+  beStrictAboutOutputDuringTests="true"
+  verbose="true"
+  beStrictAboutChangesToGlobalState="true">
+  <testsuites>
+    <testsuite name="ExampleTests">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
+</phpunit>
