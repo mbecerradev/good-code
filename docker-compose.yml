@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  goodcode_mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-dump:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepassword
+      MYSQL_DATABASE: goodcode
+
+  goodcode_phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - goodcode_mysql
+    environment:
+      PMA_HOST: goodcode_mysql
+      PMA_PORT: 3306
+    ports:
+      - '8080:80'

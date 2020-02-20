@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace GoodCode\Lesson1;
+namespace GoodCode;
 
 class NegativeDistanceException extends \Exception
 {
