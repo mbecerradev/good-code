@@ -14,9 +14,9 @@ class Distance
         if ($meters >= 0) {
             $sql = 'SELECT name, value FROM configuration WHERE name = "max_distance"';
             $conn = \Doctrine\DBAL\DriverManager::getConnection(array(
-                'user' => 'root',
-                'password' => 'examplepassword',
-                'host' => '127.0.0.1',
+                'user' => 'user',
+                'password' => 'us3r',
+                'host' => 'mysql',
                 'port' => 3306,
                 'dbname' => 'goodcode',
                 'driver' => 'pdo_mysql',

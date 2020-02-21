@@ -3,7 +3,7 @@
   "description": "Useful repo for talking abot good code",
   "homepage": "https://github.com/mbecerradev/good-code",
   "require": {
-    "php": ">=7.2",
+    "php": ">=7.4",
     "doctrine/orm": "^2.7"
   },
   "require-dev": {
