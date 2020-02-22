@@ -32,6 +32,7 @@
     "style": "phpcs -p --standard=PSR2 src tests",
     "fix-style": "phpcbf -p --standard=PSR2 src tests",
     "phpunit": "phpunit --configuration phpunit.xml",
+    "coverage": "phpunit --configuration phpunit.xml --coverage-text",
     "mutant-testing": "infection",
     "test": [
       "parallel-lint . --exclude vendor",

@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace GoodCode;
 
-
-interface DistanceConfiguration {
+interface DistanceConfiguration
+{
     public function getSmallDistanceValue(): float;
 }
